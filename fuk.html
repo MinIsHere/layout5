@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Website</title>
+    <link rel="icon" type="image/x-icon" href="./head.jpg">
+    
+    <style>
+        body {
+        background-image: url(./linkin-park-band-logo-symbol.png);
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        background-color: #f5faf8;
+        margin: 0;
+        padding: 0;
+}
+
+header {
+    background-color: rgb(185, 205, 205);
+    color: #161414;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5faf8;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color:rgb(78, 67, 69);
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #f5faf8;
+    color:#212423
+}
+
+h1 {
+    margin: 0;
+}
+
+#playlist {
+    margin: 20px;
+}
+
+h2 {
+    color: #d9d6d6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cover {
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+audio {
+    margin-top: 10px;
+    width: 30%;
+    height: 30px;
+}
+
+footer {
+    text-align: center;
+    color: #b51919;
+    font-size: 18px;
+    margin-top: auto;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Music Website</h1>
+        <input type="text" id="search" placeholder="Tìm kiếm bài hát...">
+    </header>
+    <script>
+        document.getElementById('search').addEventListener('input', function() {
+        let filter = this.value.toLowerCase();
+        let songTitles = document.querySelectorAll('h3');
+        songTitles.forEach(function(songTitle) {
+            if (songTitle.textContent.toLowerCase().includes(filter)) {
+                songTitle.parentElement.style.display = '';
+            } else {
+                songTitle.parentElement.style.display = 'none';
+            }
+        });
+    });
+    </script>
+<nav>
+    <ul>
+        <li><a href="#Hybrid Theory">Hybrid Theory</a></li>
+        <li><a href="#Meteora">Meteora</a></li>
+        <li><a href="#20th Aniversary">20th Aniversary</a></li>
+    </ul>
+</nav>
+
+    <section id="Hybrid Theory">
+        <h2>Hybrid Theory</h2>
+        <ul>
+            <li>
+                <img src="./image.png" alt="In The End Cover" class="cover">
+                <h3>In the End</h3>
+                <audio controls>
+                    <source src="./y2mate.com - What Ive Done Official Music Video 4K Upgrade  Linkin Park.mp3" type="audio/mpeg">
+                </audio>
+                
+            </li>
+            <li>
+                <img src="./WhatI'veDoneCover.jpg" alt="What I've done Cover" class="cover">
+                <h3>What I've Done</h3>
+                <audio controls>
+                    <source src="./y2mate.com - SOOBIN  DANCING IN THE DARK  BẬT NÓ LÊN Album Official Visualizer.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+            <li>
+                <img src="./capsule_616x353.jpg" alt="Given Up Cover" class="cover">
+                <h3>Given Up</h3>
+                <audio controls>
+                    <source src="./y2mate.com - Given Up Official Music Video  Linkin Park.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+        </ul>
+    </section>
+
+    <header>
+        <h1>Meteora</h1>
+    </header>
+
+    <section id="Meteora">
+        <h2>Meteora</h2>
+        <ul>
+            <li>
+                <img src="./49625845_134966990775460_4088434512147513344_n.png" alt="Figure.09 Cover" class="cover">
+                <h3>Figure.09</h3>
+                <audio controls>
+                    <source src="./y2mate.com - Figure09  Linkin Park Meteora.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+            <li>
+                <img src="./hq720 (3).jpg" alt="Somewhere I Belong Cover" class="cover">
+                <h3>Somewhere I Belong</h3>
+                <audio controls>
+                    <source src="./y2mate.com - Somewhere I Belong Official Music Video 4K UPGRADE  Linkin Park.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+            <li>
+                <img src="./300426717_541105137822189_1214500302399036724_n.jpg" alt="Trống cơm Cover" class="cover">
+                <h3>Trống Cơm</h3>
+                <audio controls>
+                    <source src="./y2mate.com - Breaking the Habit Official Music Video HD UPGRADE  Linkin Park.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+            <li>
+                <img src="./maxresdefault (9).jpg" alt="Numb Cover" class="cover">
+                <h3>12h03</h3>
+                <audio controls>
+                    <source src="./y2mate.com - Numb Official Music Video 4K UPGRADE  Linkin Park.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+        </ul>
+    </section>
+
+
+    <header>
+        <h1>20th Aniversary</h1>
+    </header>
+
+    <section id="20th Aniversary">
+        <h2>20th Aniversary</h2>
+        <ul>
+            <li>
+                <img src="./hq720 (4).jpg" alt="Iridescent Cover" class="cover">
+                <h3>Iridescent</h3>
+                <audio controls>
+                    <source src="./y2mate.com - Iridescent Official Music Video  Linkin Park.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+            <li>
+                <img src="./hq720 (5).jpg" alt="Friendly Fire Cover" class="cover">
+                <h3>Friendly Fire</h3>
+                <audio controls>
+                    <source src="./y2mate.com - Linkin Park  Friendly Fire  Lyrics.mp3" type="audio/mpeg">
+                </audio>    
+            </li>
+            <li>
+                <img src="./maxresdefault (10).jpg" alt="Lost In the Echo Cover" class="cover">
+                <h3>Lost In the Echo</h3>
+                <audio controls>
+                    <source src="./y2mate.com - LOST IN THE ECHO Official Music Video  Linkin Park.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+            <li>
+                <img src="./images1.jfif" alt="ALREADY OVER Cover" class="cover">
+                <h3>ALREADY OVER</h3>
+                <audio controls>
+                    <source src="./y2mate.com - MEN CRY  ANH TÀI BINZ  Tiết mục SOLO tại ANH TRAI VƯỢT NGÀN CHÔNG GAI 2024.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+        </ul>
+    </section>
+
+<footer>
+    <p>&copy; 2024 My Music Website</p>
+</footer>
+
+<script src="script.js"></script>
+<h5>
+    <a href="./index.html">Back</a>
+  </h5>
+</body>
+</html>
